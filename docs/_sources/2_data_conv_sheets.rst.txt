@@ -28,12 +28,12 @@ Data Conversion Sheet는 성능기반 내진설계에 필요한 모든 정보를
     Naming에 필요한 정보를 입력할 시트.
 
 
-* :doc:`C. Beam Properties <2_c_beam_properties>` / G.Column Properties / Wall Properties
-    연결보, 일반기둥, 벽체의 모든 정보를 입력할 시트.
+* :doc:`Prop_C.Beam <2_c_beam_properties>` / Prop_G.Beam / Wall Properties
+    벽체, 연결보, 일반보, 탄성보, 일반기둥, 탄성기둥의 모든 정보를 입력할 시트.
 
 
-* Output_Naming
-    앞에서 입력한 정보들을 바탕으로 이름이 출력되는 시트.
+* Input_Naming
+    앞에서 입력한 정보들을 바탕으로 모델링에 사용할 이름이 출력되는 시트.
 
 
 * Output_G.Beam Properties / Output_E.Beam Properties / Output_E.Column Properties
