@@ -24,7 +24,7 @@ Data Conversion Sheet는 성능기반 내진설계에 필요한 모든 정보를
     Midas Gen에서 Import할 정보를 입력할 시트.
 
 
-* Naming
+* :doc:`Naming <2_naming>`
     Naming에 필요한 정보를 입력할 시트.
 
 
