@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Data Conversion Sheets 작성 &#8212;  성능기반 내진설계 업무절차서 </title>
+    <title>Naming &#8212;  성능기반 내진설계 업무절차서 </title>
   
   
   
@@ -41,11 +41,11 @@
     <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/translations.js"></script>
     <script src="_static/design-tabs.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '2_data_conv_sheets';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '2_naming';</script>
     <link rel="index" title="색인" href="genindex.html" />
     <link rel="search" title="검색" href="search.html" />
-    <link rel="next" title="이름 표기법" href="2_naming_rules.html" />
-    <link rel="prev" title="주기 확인(탄성설계 모델)" href="1_period_check_model.html" />
+    <link rel="next" title="Prop_S.Wall" href="2_wall_properties.html" />
+    <link rel="prev" title="Story Data" href="2_story_data.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="ko">
   </head>
@@ -236,7 +236,7 @@
   </p>
   <div class="bd-toc-item navbar-nav">
     <p aria-level="2" class="caption" role="heading"><span class="caption-text">STEPS</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="2_naming_rules.html">이름 표기법</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_etc.html">ETC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_materials.html">Materials</a></li>
@@ -244,7 +244,7 @@
 <li class="toctree-l1"><a class="reference internal" href="2_nodal_loads.html">Nodal Loads</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_story_mass.html">Story Mass</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_story_data.html">Story Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_naming.html">Naming</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Naming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_wall_properties.html">Prop_S.Wall</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_c_beam_properties.html">Prop_C.Beam</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_output_e_g_beam_properties.html">Output_G.Beam Properties / Output_E.Beam Properties</a></li>
@@ -280,68 +280,47 @@
             
             <article class="bd-article" role="main">
               
-  <section id="data-conversion-sheets">
-<h1>Data Conversion Sheets 작성<a class="headerlink" href="#data-conversion-sheets" title="이 제목에 대한 퍼머링크">#</a></h1>
-<p><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">Excel</span> <span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Midas GEN</span></p>
-<p>Data Conversion Sheet는 성능기반 내진설계에 필요한 모든 정보를 입력할 엑셀 파일입니다.
-본 업무절차서에서 소개할 성능기반 내진설계의 모든 과정은 이 엑셀 파일을 기반으로 하며,
-따라서 이 파일이 제대로 작성되어야 모델링에서부터 결과 확인까지 오류없이 진행될 수 있습니다.</p>
-<p>시트 작성에 앞서, 각 시트의 구성을 간략하게 소개합니다.</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt><a class="reference internal" href="2_etc.html"><span class="doc">ETC</span></a></dt><dd><p>철근과 콘크리트의 강도 정보를 입력할 시트.</p>
+  <section id="naming">
+<h1>Naming<a class="headerlink" href="#naming" title="이 제목에 대한 퍼머링크">#</a></h1>
+<p>Naming 시트에는 모델링할 모든 부재들의 이름을 생성해 주기 위한 정보들을 입력합니다.
+<code class="docutils literal notranslate"><span class="pre">Beam</span></code>, <code class="docutils literal notranslate"><span class="pre">Column</span></code>, <code class="docutils literal notranslate"><span class="pre">Wall</span></code>열에 각</p>
+<p>각 열마다 입력해야할 정보는 다음과 같습니다.</p>
+<ul>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">Name</span></code></dt><dd><blockquote>
+<div><p>부재의 이름을 입력합니다. 부재의 종류(보, 기둥, 벽체)에 따라 각각 <code class="docutils literal notranslate"><span class="pre">Beam</span></code>, <code class="docutils literal notranslate"><span class="pre">Column</span></code>, <code class="docutils literal notranslate"><span class="pre">Wall</span></code>열에 입력합니다.</p>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">경고</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="2_naming_rules.html"><span class="doc">부재 표기법</span></a>에 맞게 부재의 이름을 입력합니다.</p></li>
+<li><p>보의 종류(연결보, 일반보, 탄성보)와 기둥의 종류(일반기둥, 탄성기둥)에 상관없이 모든 보와 기둥 정보를 입력합니다.</p></li>
+</ol>
+</div>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><a class="reference internal" href="2_materials.html"><span class="doc">Materials</span></a></dt><dd><p>철근과 콘크리트의 재료 물성치 정보 시트. 참조용.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">Story</span></code></dt><dd><p>ETC 시트에서 콘크리트 강도를 입력했던 방식과 동일하게 해당 부재가 위치하는 층의 범위를 입력합니다.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><a class="reference internal" href="2_nodes_elements.html"><span class="doc">Nodes / Elements</span></a> / <a class="reference internal" href="2_nodal_loads.html"><span class="doc">Nodal Loads</span></a> / <a class="reference internal" href="2_story_mass.html"><span class="doc">Story Mass / Elements</span></a> / Story Data</dt><dd><p>Midas Gen에서 Import할 정보를 입력할 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Naming</dt><dd><p>Naming에 필요한 정보를 입력할 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="2_c_beam_properties.html"><span class="doc">Prop_C.Beam</span></a> / Prop_G.Beam / Wall Properties</dt><dd><p>벽체, 연결보, 일반보, 탄성보, 일반기둥, 탄성기둥의 모든 정보를 입력할 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Input_Naming</dt><dd><p>앞에서 입력한 정보들을 바탕으로 모델링에 사용할 이름이 출력되는 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Output_G.Beam Properties / Output_E.Beam Properties / Output_E.Column Properties</dt><dd><p>일반보, 탄성보, 탄성기둥의 모든 정보를 입력할 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Output_C.Beam Properties / Output_G.Column Properties / Output_Wall Properties</dt><dd><p>앞에서 입력한 정보들을 바탕으로 정리된 연결보, 일반기둥, 벽체의 정보가 출력되는 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Results_C.Beam / Results_G.Beam / Results_E.Beam / Results_G.Column / Results_Wall / Results_E.Column(개별 file)</dt><dd><p>해석결과를 바탕으로 연결보, 일반보, 탄성보, 일반기둥, 벽체, 탄성기둥의 강도 검토 결과가 출력되는 시트.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">No.</span></code></dt><dd><p>해당 이름의 부재가 평면상에 여러개 존재하는 경우를 고려하기 위해 작성해야할 열입니다.
+따라서 평면상에 해당 이름의 부재가 한 개일 경우는 1, 두 개일 경우는 2, 세 개일 경우는 3, … 과 같이 입력합니다.</p>
 </dd>
 </dl>
 </li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
-<p>Data Conversion Sheets의 셀은 세가지로 분류됩니다.</p>
-<a class="reference internal image-reference" href="_images/2_DCS_셀_구분.png"><img alt="_images/2_DCS_%EC%85%80_%EA%B5%AC%EB%B6%84.png" class="align-center" src="_images/2_DCS_%EC%85%80_%EA%B5%AC%EB%B6%84.png" style="width: 380.8px; height: 93.60000000000001px;" /></a>
-<p>사용자는 하얀색 셀에 모델링 정보를 입력합니다.
-노란색 셀에도 입력이 가능하지만, PBD_p3d에서 대부분의 내용을 출력해주기 때문에 수정이 필요한 경우에만 입력합니다.</p>
-</div>
-<div class="toctree-wrapper compound">
+<figure class="align-center" id="id1">
+<img alt="_images/2_naming_%EC%98%88%EC%8B%9C.png" src="_images/2_naming_%EC%98%88%EC%8B%9C.png" />
+<figcaption>
+<p><span class="caption-text"><em>Naming 시트 작성 예시</em></span><a class="headerlink" href="#id1" title="이 이미지에 대한 퍼머링크">#</a></p>
+</figcaption>
+</figure>
+<div class="topic">
+<p class="topic-title">What to do</p>
+<p>위의 설명과 예시에 따라 부재의 이름, 층범위, 개수를 입력합니다.</p>
 </div>
 </section>
 
@@ -353,17 +332,17 @@
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="1_period_check_model.html" title="이전 페이지">
+  <a class='left-prev' id="prev-link" href="2_story_data.html" title="이전 페이지">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">이전</p>
-          <p class="prev-next-title">주기 확인(탄성설계 모델)</p>
+          <p class="prev-next-title">Story Data</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="2_naming_rules.html" title="다음 페이지">
+  <a class='right-next' id="next-link" href="2_wall_properties.html" title="다음 페이지">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">다음</p>
-      <p class="prev-next-title">이름 표기법</p>
+      <p class="prev-next-title">Prop_S.Wall</p>
   </div>
   <i class="fa-solid fa-angle-right"></i>
   </a>
@@ -388,7 +367,7 @@
 <div class="toc-item">
   
 <div class="tocsection sourcelink">
-    <a href="_sources/2_data_conv_sheets.rst.txt">
+    <a href="_sources/2_naming.rst.txt">
         <i class="fa-solid fa-file-lines"></i> 소스 보기
     </a>
 </div>
