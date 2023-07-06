@@ -41,7 +41,9 @@ Supports 생성
 반력 입력
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   1. Supports의 반력을 확인하기 위해, :guilabel:`Results` - :guilabel:`Results Table` - :guilabel:`Reaction`\를 클릭합니다.
+   1. 반력을 확인하기 위해서는 반드시 해석을 실시해야 합니다. 해석을 진행합니다.
+   
+   2. Supports의 반력을 확인하기 위해, :guilabel:`Results` - :guilabel:`Results Table` - :guilabel:`Reaction`\를 클릭합니다.
 
 
       :doc:`하중의 의미 <2_etc>`\를 다시 한 번 확인하고, 생성된 창에서 DL과 LL에 포함되는 하중을 모두 체크한 후 :kbd:`OK`\를 클릭합니다.
