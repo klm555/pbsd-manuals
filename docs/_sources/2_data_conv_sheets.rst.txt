@@ -74,7 +74,8 @@ Data Conversion Sheet는 성능기반 내진설계에 필요한 모든 정보를
    2_nodal_loads
    2_story_mass
    2_story_data
-   2_c_beam_properties
-   2_g_column_properties
-   2_output_e_g_beam_properties
    2_wall_properties
+   2_c_beam_properties
+   2_output_e_g_beam_properties
+   2_g_column_properties
+   
