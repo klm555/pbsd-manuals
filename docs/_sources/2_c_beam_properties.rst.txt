@@ -8,14 +8,18 @@ Prop_C.Beam 시트에는 연결보(Coupling Beam)에 대한 정보를 입력합�
 각 열마다 입력해야할 정보는 다음과 같습니다.
 
 .. note::
-   * 부재는 순서대로(층순, 부재명순 등등) 입력하지 않아도 무방합니다. 
+   * 부재는 층 순서대로 입력하지 않아도 무방합니다.(아래 그림 참조)
      사용자 편의에 따라 입력하면, Prop_C.Beam 시트에 자동으로 정렬되어 출력됩니다.
 
-   * 동일한 정보의 부재를 모두 입력할 필요가 없습니다. 아래의 예시와 같이, 해당 행의 정보가 위의 행 정보와 동일하다면, 빈 칸으로 두어도 됩니다.
+     .. figure:: _static/images/2_c_beam_예시_1.png
+        :align: center
+        :scale: 70%
+
+   * 동일한 정보의 부재를 모두 입력할 필요가 없습니다. 아래의 예시와 같이, 해당 행의 정보가 위의 행 정보와 동일하다면, 빈 칸으로 두어도 됩니다. (아래 그림 참조)
      다만, ``Dimensions``\와 ``Arrangement`` 열은 반드시 모두 입력해야 합니다
      (``Dimensions`` 열은 빈 칸으로 두면 ``Check``\, ``Non-Check`` 열이 생성되지 않습니다. 또한 ``Arrangement`` 열은 빈 칸으로 두면 0으로 입력됩니다).
 
-     .. figure:: _static/images/2_c_beam_예시.png
+     .. figure:: _static/images/2_c_beam_예시_3.png
         :align: center
 
 * ``Name``
