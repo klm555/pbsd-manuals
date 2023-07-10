@@ -79,4 +79,5 @@ Data Conversion Sheet는 성능기반 내진설계에 필요한 모든 정보를
    2_c_beam_properties
    2_output_e_g_beam_properties
    2_g_column_properties
+   2_input_naming
    

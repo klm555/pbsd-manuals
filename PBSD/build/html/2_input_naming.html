@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Data Conversion Sheets 작성 &#8212;  성능기반 내진설계 업무절차서 </title>
+    <title>Input_Naming &#8212;  성능기반 내진설계 업무절차서 </title>
   
   
   
@@ -41,11 +41,9 @@
     <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/translations.js"></script>
     <script src="_static/design-tabs.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '2_data_conv_sheets';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '2_input_naming';</script>
     <link rel="index" title="색인" href="genindex.html" />
     <link rel="search" title="검색" href="search.html" />
-    <link rel="next" title="이름 표기법" href="2_naming_rules.html" />
-    <link rel="prev" title="주기 확인(탄성설계 모델)" href="1_period_check_model.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ko"/>
   </head>
@@ -192,7 +190,7 @@ document.write(`
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -240,30 +238,6 @@ document.write(`
     
   </div>
   
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
-     aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">STEPS</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="2_naming_rules.html">이름 표기법</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_etc.html">ETC</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_materials.html">Materials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_nodes_elements.html">Nodes / Elements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_nodal_loads.html">Nodal Loads</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_story_mass.html">Story Mass</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_story_data.html">Story Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_naming.html">Naming</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_wall_properties.html">Prop_S.Wall</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_c_beam_properties.html">Prop_C.Beam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_output_e_g_beam_properties.html">Output_G.Beam Properties / Output_E.Beam Properties</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_g_column_properties.html">G.Column Properties</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_input_naming.html">Input_Naming</a></li>
-</ul>
-</div>
-</nav></div>
-    </div>
-  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
@@ -296,10 +270,7 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    
-    <li class="breadcrumb-item"><a href="pbd_p3d_manual.html" class="nav-link">성능기반 내진설계 업무절차서 v1.0</a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page">Data Conversion Sheets 작성</li>
+    <li class="breadcrumb-item active" aria-current="page">Input_Naming</li>
   </ul>
 </nav>
 </div>
@@ -316,69 +287,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="data-conversion-sheets">
-<h1>Data Conversion Sheets 작성<a class="headerlink" href="#data-conversion-sheets" title="이 제목에 대한 퍼머링크">#</a></h1>
-<p><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">Excel</span> <span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Midas GEN</span></p>
-<p>Data Conversion Sheet는 성능기반 내진설계에 필요한 모든 정보를 입력할 엑셀 파일입니다.
-본 업무절차서에서 소개할 성능기반 내진설계의 모든 과정은 이 엑셀 파일을 기반으로 하며,
-따라서 이 파일이 제대로 작성되어야 모델링에서부터 결과 확인까지 오류없이 진행될 수 있습니다.</p>
-<p>시트 작성에 앞서, 각 시트의 구성을 간략하게 소개합니다.</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt><a class="reference internal" href="2_etc.html"><span class="doc">ETC</span></a></dt><dd><p>철근과 콘크리트의 강도 정보를 입력할 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="2_materials.html"><span class="doc">Materials</span></a></dt><dd><p>철근과 콘크리트의 재료 물성치 정보 시트. 참조용.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="2_nodes_elements.html"><span class="doc">Nodes / Elements</span></a> / <a class="reference internal" href="2_nodal_loads.html"><span class="doc">Nodal Loads</span></a> / <a class="reference internal" href="2_story_mass.html"><span class="doc">Story Mass / Elements</span></a> / Story Data</dt><dd><p>Midas Gen에서 Import할 정보를 입력할 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="2_naming.html"><span class="doc">Naming</span></a></dt><dd><p>Naming에 필요한 정보를 입력할 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="2_c_beam_properties.html"><span class="doc">Prop_C.Beam</span></a> / Prop_G.Beam / Wall Properties</dt><dd><p>벽체, 연결보, 일반보, 탄성보, 일반기둥, 탄성기둥의 모든 정보를 입력할 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Input_Naming</dt><dd><p>앞에서 입력한 정보들을 바탕으로 모델링에 사용할 이름이 출력되는 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Output_G.Beam Properties / Output_E.Beam Properties / Output_E.Column Properties</dt><dd><p>일반보, 탄성보, 탄성기둥의 모든 정보를 입력할 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Output_C.Beam Properties / Output_G.Column Properties / Output_Wall Properties</dt><dd><p>앞에서 입력한 정보들을 바탕으로 정리된 연결보, 일반기둥, 벽체의 정보가 출력되는 시트.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Results_C.Beam / Results_G.Beam / Results_E.Beam / Results_G.Column / Results_Wall / Results_E.Column(개별 file)</dt><dd><p>해석결과를 바탕으로 연결보, 일반보, 탄성보, 일반기둥, 벽체, 탄성기둥의 강도 검토 결과가 출력되는 시트.</p>
-</dd>
-</dl>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">참고</p>
-<p>Data Conversion Sheets의 셀은 세가지로 분류됩니다.</p>
-<a class="reference internal image-reference" href="_images/2_DCS_셀_구분.png"><img alt="_images/2_DCS_%EC%85%80_%EA%B5%AC%EB%B6%84.png" class="align-center" src="_images/2_DCS_%EC%85%80_%EA%B5%AC%EB%B6%84.png" style="width: 380.8px; height: 93.60000000000001px;" /></a>
-<p>사용자는 하얀색 셀에 모델링 정보를 입력합니다.
-노란색 셀에도 입력이 가능하지만, PBD_p3d에서 대부분의 내용을 출력해주기 때문에 수정이 필요한 경우에만 입력합니다.</p>
-</div>
-<div class="toctree-wrapper compound">
-</div>
+  <section id="input-naming">
+<h1>Input_Naming<a class="headerlink" href="#input-naming" title="이 제목에 대한 퍼머링크">#</a></h1>
+<p>Input_Naming 시트는 앞서 입력된 부재의 이름 정보(Naming)와 층정보(Story Data)를 바탕으로, Perform-3D에 입력할 이름 정보를 출력해주는 시트입니다.
+Perform-3D에서 Frame, Section, Drift 등의 이름을 일일히 생성해주어야 하는데, 이 시트를 활용하여</p>
 </section>
 
 
@@ -392,24 +304,6 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="1_period_check_model.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">이전</p>
-        <p class="prev-next-title">주기 확인(탄성설계 모델)</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="2_naming_rules.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">다음</p>
-        <p class="prev-next-title">이름 표기법</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
@@ -424,7 +318,7 @@ document.write(`
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="_sources/2_data_conv_sheets.rst.txt">
+    <a href="_sources/2_input_naming.rst.txt">
       <i class="fa-solid fa-file-lines"></i> 소스 보기
     </a>
   </div>
