@@ -9,4 +9,4 @@ Frame은 Midas Gen의 Active와 비슷한 역할을 합니다. 노드와 부재�
 
 .. topic:: What to do
 
-   1. :guilabel:`Elements`\를 클릭하고, Elements Group을 만들기 위해 생성된 창에서 :kbd:`New`\를 클릭합니다. 
+   1. :guilabel:`Elements`\를 클릭하고, Elements Group을 만들기 위해 생성된 창에서 :kbd:`New`\를 클릭합니다.
