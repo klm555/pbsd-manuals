@@ -173,9 +173,8 @@ Frame 생성
 
        :kbd:`F2` 또는 사용자가 설정한 시작 단축키를 누르면 아래와 같이 매크로가 실행됩니다.
 
-      .. .. figure:: _static/images/3_create_frames_key_macro_runnable.png
-      ..    :align: center
-      ..    :scale: 80%
+       .. figure:: _static/images/3_create_frames_macro.gif
+          :align: center
 
    
 
